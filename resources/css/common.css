@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, table, dl, dd {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-size: 1em;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+ul, ol {
+	list-style: none;
+}
+img {
+	max-width: 100%;
+	vertical-align: top;
+	border: none;
+}
+
+table {
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+    text-align: center;
+}
+body {
+	margin: 0;
+	font-family: "Open Sans", "Noto Sans KR", sans-serif;
+	font-size: 1em;
+	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+	cursor: default;
+}
+
+input:focus {
+    outline: none;
+}
+textarea:focus {
+    outline: none;
+}
+::placeholder {
+	color: #000;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+	appearance: none;
+	padding: 0 5px;
+	width: 100%;
+	height: 30px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	border: none;
+	color: #000;;
+	font-size: 1em;
+	vertical-align: middle;
+}
+input[type=button] {
+	appearance: none;
+    width: 60px;
+	height: 30px;
+	box-sizing: border-box;
+	vertical-align: middle;
+	border:1px solid #000;
+	box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+}
+select {
+    width: 200px; 
+    height: 30px;   
+    padding: 5px 10px;
+	margin-right: 10px;	
+    font-family: inherit; 
+	background-size: 10px;
+	border: 1px solid #999; 
+    border-radius: 0px; 
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.content_section {
+	width: calc(100% - 200px);
+	margin: 0 auto;
+	padding-top: 70px;
+	margin-left: 200px;
+	transition: 0.3s ease-in-out;
+}
+.content_section.active {
+	margin-left: 0;
+	width: 100%;
+	transition: 0.2s ease-in-out;
+}
+@media only screen and (max-width: 1280px) {
+	.content_section {
+		margin: 0 auto !important;
+		width: 100% !important;
+		margin-left: 0 !important;
+	}
+	.content_section.active {
+		margin-left: 0;
+		width: 100%;
+		transition: 0.2s ease-in-out;
+	}																																																																																	
+}
+
+.popup_button_re.register  {
+	background-color: rgb(25, 135, 84);
+}
+.popup_button_re.edit {
+	background-color: #0066ff;
+}
+.popup_button_re.delete {
+	background-color: #ff0000;
+}
